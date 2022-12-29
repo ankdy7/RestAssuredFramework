@@ -19,7 +19,7 @@ public class AirlinesTest {
 		
 		Response  response = RestUtils.performPost(endPoint, requestPayload, new HashMap<String, String>());
 		
-		Assert.assertEquals(response.statusCode(), 201);
+		Assert.assertEquals(response.statusCode(), 200);
 		
 		System.out.println(response.asPrettyString());
 	}
