@@ -16,13 +16,13 @@ public class AirlinesTest {
 		Map<String, Object> requestPayload =  
 
 				
-				Payloads.createAirlinePayloadFromMap("213245", "ABCderasd Airlines", "IN", "ABC", 
+				Payloads.createAirlinePayloadFromMap("21324534", "ABCderasd Airlines", "IN", "ABC", 
 						"ABC Slogan", "Mumbai", "abc.com", "2022");
 
 		
 		Response  response = RestUtils.performPost(endPoint, requestPayload, new HashMap<String, String>());
 		
-		Assert.assertEquals(response.statusCode(), 201);
+		Assert.assertEquals(response.statusCode(), 200);
 		
 		System.out.println(response.asPrettyString());
 	}
