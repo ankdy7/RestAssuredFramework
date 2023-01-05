@@ -14,8 +14,11 @@ public class AirlinesTest {
 
 		String endPoint = "https://api.instantwebtools.net/v1/airlines";
 		Map<String, Object> requestPayload =  
-				Payloads.createAirlinePayloadFromMap("213245", "ABCderasd Airlines", "IN", "ABC", 
+
+				
+				Payloads.createAirlinePayloadFromMap("21324534", "ABCderasd Airlines", "IN", "ABC", 
 						"ABC Slogan", "Mumbai", "abc.com", "2022");
+
 		
 		Response  response = RestUtils.performPost(endPoint, requestPayload, new HashMap<String, String>());
 		
